@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Introduction</title>
+</head>
+<body>
+
+    <!-- Main heading -->
+    <h1>My Introduction</h1>
+
+    <!-- Introduction paragraph using line breaks -->
+    <p>
+        Hello, my name is Sathwik.<br>
+        I am a student learning HTML.<br>
+        I enjoy coding and building creative projects.<br>
+        My hobbies include reading books, playing video games, and learning new technologies.<br>
+        My goal is to become a skilled web developer.<br>
+    </p>
+
+    <!-- Closing line -->
+    <p>Thank you for reading! 😊</p>
+
+</body>
+</ht
