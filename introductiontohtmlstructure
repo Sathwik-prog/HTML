@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Me</title>
+</head>
+<body>
+    <!-- This is a heading introducing myself -->
+    <h1>Hello, I'm Alex!</h1>
+
+    <!-- This paragraph contains a short introduction -->
+    <p>
+        I am learning HTML and practicing how to structure a basic webpage.<br>
+        I enjoy coding, reading books, and exploring new technologies.<br>
+        My goal is to become a proficient web developer.
+    </p>
+
+    <!-- This is a closing message -->
+    <p>Thank you for visiting my page!</p>
+</body>
+</html>
