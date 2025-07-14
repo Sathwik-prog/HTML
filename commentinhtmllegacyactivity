@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Learning HTML Comments</title>
+</head>
+<body>
+
+    <!-- This is the main heading of the page -->
+    <h1>Welcome to My HTML Comments Practice Page</h1>
