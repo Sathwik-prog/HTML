@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The Semantic Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f9f9f9;
+        }
+
+        header,
+        nav,
+        section,
+        footer {
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        header {
+            background-color: #007acc;
+            color: white;
+        }
+
+        nav {
+            background-color: #e0e0e0;
+        }
+
+        nav a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        section {
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+        }
+
+        img,
+        video {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>The Semantic Webpage</h1>
+        <p>A simple page built using semantic HTML elements</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#bio">Bio</a>
+        <a href="#photo">Photo</a>
+        <a href="#video">Video</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <h2>About</h2>
+        <p>This webpage demonstrates the use of HTML5 semantic elements like header, nav, section, and footer.</p>
+    </section>
+
+    <section id="bio">
+        <h2>My Bio</h2>
+        <p>Hi, I'm Sathwik! I'm a student with a growing interest in web development and technology. I enjoy learning
+            how websites are built and how different pieces of code come together to create something useful and
+            creative. I'm currently exploring HTML5, especially semantic elements, and I'm excited to keep improving my
+            skills and building cool projects along the way.</p>
+    </section>
+
+    <section id="photo">
+        <h2>My Photo</h2>
+        <p>Here's a picture of me (or something I like):</p>
+        <img src="nature.jpg" alt="A photo of Sathwik" width="300">
+    </section>
+
+    <section id="video">
+        <h2>My Video</h2>
+        <p>Check out this video I wanted to share:</p>
+        <video width="400" controls>
+            <source src="292716_large.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>You can reach out via email at sathwik@example.com</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 The Semantic Webpage</p>
+    </footer>
+
+</body>
+
+</html>
