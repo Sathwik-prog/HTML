@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <h2>Student Registration Form</h2>
+    <form action="/submit" method="post" enctype="multipart/form-data"> <!-- Full Name --> <label for="fullname">Full
+            Name:</label><br> <input type="text" id="fullname" name="fullname" value="Sathwik Reddy" required><br><br>
+        <!-- Email --> <label for="email">Email Address:</label><br> <input type="email" id="email" name="email"
+            value="sathwik.reddy@example.com" required><br><br> <!-- Password --> <label
+            for="password">Password:</label><br> <input type="password" id="password" name="password"
+            value="Sathwik@123" required><br><br> <!-- Confirm Password --> <label for="confirm_password">Confirm
+            Password:</label><br> <input type="password" id="confirm_password" name="confirm_password"
+            value="Sathwik@123" required><br><br> <!-- Gender --> <label>Gender:</label><br> <input type="radio"
+            name="gender" value="Male" checked> Male<br> <input type="radio" name="gender" value="Female"> Female<br>
+        <input type="radio" name="gender" value="Other"> Other<br><br> <!-- Date of Birth --> <label for="dob">Date of
+            Birth:</label><br> <input type="date" id="dob" name="dob" value="2005-08-15"><br><br> <!-- Phone Number -->
+        <label for="phone">Phone Number:</label><br> <input type="tel" id="phone" name="phone"
+            value="9876543210"><br><br> <!-- Address --> <label for="address">Address:</label><br> <textarea
+            id="address" name="address" rows="4"
+            cols="40">123, Hitech City, Hyderabad, Telangana, 500081</textarea><br><br> <!-- Country --> <label
+            for="country">Country:</label><br> <select id="country" name="country">
+            <option value="india" selected>India</option>
+            <option value="usa">United States</option>
+            <option value="uk">United Kingdom</option>
+            <option value="australia">Australia</option>
+        </select><br><br> <!-- State --> <label for="state">State:</label><br> <select id="state" name="state">
+            <option value="telangana" selected>Telangana</option>
+            <option value="andhra">Andhra Pradesh</option>
+            <option value="karnataka">Karnataka</option>
+            <option value="tamilnadu">Tamil Nadu</option>
+        </select><br><br> <!-- Hobbies --> <label>Hobbies/Interests:</label><br> <input type="checkbox" name="hobby"
+            value="reading" checked> Reading<br> <input type="checkbox" name="hobby" value="sports"> Sports<br> <input
+            type="checkbox" name="hobby" value="music" checked> Music<br> <input type="checkbox" name="hobby"
+            value="coding" checked> Coding<br> <input type="checkbox" name="hobby" value="traveling"> Traveling<br><br>
+        <!-- Profile Photo Upload --> <label for="photo">Upload Profile Photo:</label><br> <input type="file" id="photo"
+            name="photo"><br><br> <!-- Preferred Contact Method --> <label for="contact">Preferred Contact
+            Method:</label><br> <select id="contact" name="contact">
+            <option value="email" selected>Email</option>
+            <option value="phone">Phone</option>
+            <option value="sms">SMS</option>
+        </select><br><br> <!-- Accept Terms --> <input type="checkbox" id="terms" name="terms" checked required> <label
+            for="terms">I accept the terms and conditions</label><br><br> <!-- Submit --> <input type="submit"
+            value="Register"> </form>
+</body>
+
+</html>
