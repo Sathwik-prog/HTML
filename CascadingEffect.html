@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cascading Effect Demo</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Internal CSS -->
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to right, #ffecd2, #fcb69f);
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: navy;
+            text-align: center;
+            animation: slideIn 2s ease-out;
+        }
+
+        .content {
+            background: white;
+            margin: 2rem auto;
+            padding: 2rem;
+            width: 80%;
+            max-width: 600px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 1rem;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        .highlight {
+            color: darkorange;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Inline style (highest priority) -->
+    <h1 style="color: crimson;">CSS Cascading & Effects</h1>
+
+    <div class="content">
+        <p id="intro">This paragraph demonstrates the <span class="highlight">cascading</span> effect in CSS.</p>
+        <p class="description">We are using <strong>gradients</strong>, <strong>animations</strong>, and layered
+            <strong>backgrounds</strong> here.</p>
+        <button class="animated-btn">Hover Me!</button>
+    </div>
+
+</body>
+
+</html>
