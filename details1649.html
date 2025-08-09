@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Simple Info Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        label {
+            display: block;
+            margin-top: 12px;
+            font-weight: 600;
+        }
+
+        input[type="text"],
+        input[type="date"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 6px;
+            box-sizing: border-box;
+        }
+
+        .hobby-options {
+            margin-top: 6px;
+        }
+
+        .hobby-options label {
+            display: inline-block;
+            margin-right: 12px;
+            font-weight: normal;
+        }
+
+        button {
+            margin-top: 14px;
+            padding: 8px 14px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Enter your details</h1>
+
+    <form id="infoForm">
+        <label for="name">Enter your name</label>
+        <input type="text" id="name" name="name" placeholder="e.g. Alex" required>
+
+        <label for="grade">Enter your grade</label>
+        <input type="text" id="grade" name="grade" placeholder="e.g. 10 / A / 3rd year" required>
+
+        <label for="dob">Enter your date of birth</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label>Enter your hobbies</label>
+        <div class="hobby-options">
+            <label><input type="checkbox" name="hobbies" value="Reading"> Reading</label>
+            <label><input type="checkbox" name="hobbies" value="Sports"> Sports</label>
+            <label><input type="checkbox" name="hobbies" value="Music"> Music</label>
+            <label><input type="checkbox" name="hobbies" value="Gaming"> Gaming</label>
+        </div>
+
+        <label for="otherHobbies">Other hobbies (write any others)</label>
+        <textarea id="otherHobbies" name="otherHobbies" rows="3" placeholder="e.g. painting, coding"></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        // Simple client-side handler that prevents page reload and prints the entered data
+        document.getElementById('infoForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value.trim();
+            const grade = document.getElementById('grade').value.trim();
+            const dob = document.getElementById('dob').value;
+            const other = document.getElementById('otherHobbies').value.trim();
+
+            // collect checked hobbies
+            const checked = Array.from(document.querySelectorAll('input[name="hobbies"]:checked'))
+                .map(cb => cb.value);
+
+            const hobbies = checked.concat(other ? [other] : []).join(', ') || 'None';
+
+            // show the collected info (you can replace this with sending to a server)
+            alert(
+                'Name: ' + name + '\n' +
+                'Grade: ' + grade + '\n' +
+                'Date of Birth: ' + dob + '\n' +
+                'Hobbies: ' + hobbies
+            );
+        });
+    </script>
+</body>
+
+</html>
