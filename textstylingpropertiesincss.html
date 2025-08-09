@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Combined Activity</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            /* Typography */
+            margin: 20px;
+            line-height: 1.5;
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-shadow: 2px 2px 5px gray;
+            /* Text Shadow */
+        }
+
+        /* Navigation - Text Decoration & Transform */
+        nav a {
+            text-transform: uppercase;
+            text-decoration: none;
+            color: darkblue;
+            margin-right: 15px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+            transform: scale(1.1);
+        }
+
+        /* Transform box */
+        .box {
+            width: 150px;
+            height: 150px;
+            background-color: lightcoral;
+            margin: 20px 0;
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+            /* Box Shadow */
+            transition: transform 0.3s;
+        }
+
+        .box:hover {
+            transform: rotate(5deg) translateY(-5px);
+            /* Transform */
+        }
+
+        /* Text indent example */
+        p {
+            text-indent: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Practice Project</h1>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Gallery</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="box"></div>
+
+    <p>
+        This paragraph demonstrates the text-indent property, where the first line of text is indented.
+        Along with typography, transform effects, and text shadows, this page combines multiple CSS properties in one
+        example.
+    </p>
+
+</body>
+
+</html>
