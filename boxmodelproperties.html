@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Box Model Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #e0f7fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .box {
+            width: 280px;
+            background: #fff3e0;
+            /* Content area */
+            padding: 20px;
+            /* Space inside */
+            border: 6px solid #ff7043;
+            /* Border */
+            margin: 30px;
+            /* Space outside */
+            text-align: center;
+            border-radius: 12px;
+        }
+
+        h2 {
+            margin: 0;
+            color: #d84315;
+        }
+
+        p {
+            color: #424242;
+            font-size: 14px;
+            margin: 10px 0;
+        }
+
+        ul {
+            text-align: left;
+            font-size: 13px;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h2>Box Model</h2>
+        <p>The box model consists of:</p>
+        <ul>
+            <li><b>Content</b>: Text or images inside the box</li>
+            <li><b>Padding</b>: Space between content and border</li>
+            <li><b>Border</b>: Outline surrounding padding</li>
+            <li><b>Margin</b>: Space outside the border</li>
+        </ul>
+    </div>
+</body>
+
+</html>
