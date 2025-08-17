@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Positioning - Complete Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            background: #333;
+            color: white;
+            padding: 20px;
+        }
+
+        .container {
+            margin: 20px;
+            position: relative;
+            /* important for absolute positioning demo */
+            height: 600px;
+            border: 2px dashed #ccc;
+            padding: 20px;
+        }
+
+        .box {
+            width: 120px;
+            height: 120px;
+            margin: 15px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Different positionings */
+        .static {
+            background: teal;
+            position: static;
+        }
+
+        .relative {
+            background: orange;
+            position: relative;
+            top: 20px;
+            left: 20px;
+        }
+
+        .absolute {
+            background: purple;
+            position: absolute;
+            top: 100px;
+            right: 50px;
+        }
+
+        .sticky {
+            background: green;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+        }
+
+        .fixed {
+            background: red;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 999;
+        }
+
+        .spacer {
+            height: 1500px;
+            /* creates scroll for sticky & fixed demo */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Positioning - Full Demo</h1>
+
+    <div class="container">
+        <div class="box static">Static</div>
+        <div class="box relative">Relative</div>
+        <div class="box absolute">Absolute</div>
+        <div class="box sticky">Sticky (scroll me)</div>
+    </div>
+
+    <div class="spacer">
+        <p style="padding:20px; font-size:18px;">
+            Scroll down to see how <b>Sticky</b> and <b>Fixed</b> behave.
+        </p>
+    </div>
+
+    <div class="box fixed">Fixed</div>
+</body>
+
+</html>
