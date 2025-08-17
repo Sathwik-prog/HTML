@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h2 {
+            font-weight: bold;
+        }
+
+        /* Default div styles */
+        div {
+            margin: 10px;
+            padding: 5px;
+        }
+
+        /* Fixed position */
+        .fixed {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            border: 2px solid green;
+        }
+
+        /* Normal div */
+        .normal {
+            border: 2px solid green;
+        }
+
+        /* Sticky div */
+        .sticky {
+            position: sticky;
+            top: 0;
+            border: 2px solid green;
+            width: fit-content;
+        }
+
+        /* Relative container */
+        .relative {
+            position: relative;
+            border: 2px solid purple;
+            padding: 20px;
+            width: fit-content;
+        }
+
+        /* Absolute inside relative */
+        .absolute {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            border: 2px solid blue;
+            width: fit-content;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>POSITIONING</h2>
+
+    <!-- Fixed div -->
+    <div class="fixed">Div with fixed position property</div>
+
+    <!-- Normal div -->
+    <div class="normal">Div with no position property</div>
+
+    <!-- Sticky div with <br> tags for 3 lines -->
+    <div class="sticky">
+        Div with sticky <br>
+        position <br>
+        property
+    </div>
+
+    <!-- Relative + Absolute -->
+    <div class="relative">
+        This div element has position: relative;
+        <div class="absolute">Absolute class DIV</div>
+    </div>
+
+    <!-- Lots of <br> for scrolling space -->
+    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br>
+</body>
+
+</html>
