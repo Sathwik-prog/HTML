@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Grid Experiment</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        .row>div {
+            border: 1px solid #ddd;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .bg-red {
+            background-color: red;
+            color: white;
+        }
+
+        .bg-purple {
+            background-color: #d8b0f7;
+        }
+
+        .bg-pink {
+            background-color: #f8d7da;
+        }
+
+        .bg-blue {
+            background-color: #b2ebf2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Hello Students!</h1>
+        <p>Resize the browser window to see the effect.</p>
+
+        <div class="row">
+            <div class="col-12 bg-red">xs</div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-3 bg-purple">.col-xs-3</div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-6 bg-pink">.col-xs-6</div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-6 bg-blue">.col-xs-6 .col-xs-6</div>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
