@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Unequal Grid Example with Bootstrap</title>
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <style>
+        .grid-item {
+            background: #f6f6f6;
+            border: 1px solid #ccc;
+            border-radius: 7px;
+            padding: 30px;
+            margin-bottom: 16px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .large {
+            background: #d1eaff;
+        }
+
+        .medium {
+            background: #ffe4b3;
+        }
+
+        .small {
+            background: #ffd1d1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h2 class="mb-4 text-center">Unequal Grid with Bootstrap</h2>
+        <div class="row">
+            <div class="col-md-8 grid-item large">
+                Large Grid Item (col-md-8)
+            </div>
+            <div class="col-md-4 grid-item small">
+                Small Grid Item (col-md-4)
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-md-3 grid-item small">
+                Small Item (col-md-3)
+            </div>
+            <div class="col-md-6 grid-item medium">
+                Medium Item (col-md-6)
+            </div>
+            <div class="col-md-3 grid-item small">
+                Small Item (col-md-3)
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap JS bundle (optional, for interactivity) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
