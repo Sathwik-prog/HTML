@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal Scrollspy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            position: relative;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #212121;
+            /* dark black/grey like screenshot */
+        }
+
+        .navbar .nav-link,
+        .navbar .navbar-brand {
+            color: white !important;
+            /* white text */
+        }
+
+        .navbar .nav-link.active {
+            background-color: #28a745;
+            /* green highlight for active section */
+            color: white !important;
+        }
+
+        /* Sections */
+        #section1 {
+            background-color: orange;
+            /* exact orange block */
+            height: 500px;
+            padding: 20px;
+        }
+
+        #section2 {
+            background-color: white;
+            height: 500px;
+            padding: 20px;
+        }
+
+        #section2 h2,
+        #section2 h4,
+        #section2 p {
+            color: green;
+            /* green text as in screenshot */
+        }
+    </style>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar-example" data-bs-offset="0" tabindex="0">
+
+    <!-- Navbar -->
+    <nav id="navbar-example" class="navbar navbar-dark fixed-top px-3">
+        <a class="navbar-brand" href="#">Codingal</a>
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a class="nav-link" href="#section1">Section 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#section2">Section 2</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Content -->
+    <div class="container-fluid" style="margin-top:60px;">
+        <div id="section1">
+            <h2>Section 1</h2>
+            <p>This is Section 1 content.</p>
+        </div>
+
+        <div id="section2">
+            <h2>Section 2</h2>
+            <h4>Codingal</h4>
+            <p>Vivek Prakash and Satyam Baranwal are the founders of Codingal.</p>
+            <p>Scroll this section.</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
